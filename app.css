@@ -1,3 +1,24 @@
+/* layout Default */
+* {
+    box-sizing: border-box;
+	margin: 0px;
+	Padding: 0px;
+}
+
+/* Design dell'Header del sito */
+.navbar {
+    background-color: black;
+}
+
+/* Design Body del sito */
+.body-website {
+    background-color: green;
+    padding: 200px 0px;
+}
+
+.title {
+    color: white;
+}
 /* Design Footer */
 .footer {
     background-color: black;
@@ -10,4 +31,12 @@
     font-size: 14px;
     color: white;
     text-align: center;
+}
+
+#prima-colonna {
+    border: 1px solid red;
+}
+
+#seconda-colonna {
+    border: 1px solid blue;
 }

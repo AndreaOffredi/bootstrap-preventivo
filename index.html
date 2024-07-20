@@ -14,24 +14,25 @@
 <body>
     <!-- creiamo l'header del sito -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container">
                 <a class="navbar-brand" href="#">Bool Factory</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Servizi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contatti</a>
-                    </li>
+                <!-- tasti header -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servizi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contatti</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -39,8 +40,21 @@
     </header>
 
     <!-- creiamo il contenuto principale della pagina -->
-    <main>
-        <h1 class="title">CIAO MONDO</h1>
+    <main class="body-website">
+        <div class="container">
+            <div class="row">
+
+                <!-- Prima Colonna -->
+                <div class="col-12 col-md-8" id="prima-colonna">
+                    <h2>CIAO A TUTTI</h2>
+                </div>
+
+                <!-- Seconda Colonna -->
+                <div class="col-12 col-md-4" id="seconda-colonna">
+                    <h2>AA</h2>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- creiamo il footer della pagina -->
