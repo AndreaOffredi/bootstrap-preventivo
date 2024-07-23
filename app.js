@@ -75,9 +75,11 @@ inputPulsanteElement.addEventListener ('click', function(event) {
     // 5) Calcoliamo lo sconto in base all'input
     if (codicePromo.includes(codiceUtente)) {
         sconto = prezzoLordo * 0.25
+        inputCodiceElement.classList.add('is-valid')
         console.log(sconto)
     } else {
         sconto = 0
+        inputCodiceElement.classList.add('is-invalid')
         console.log(sconto)
     }
 

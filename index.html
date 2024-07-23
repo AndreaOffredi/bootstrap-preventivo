@@ -57,17 +57,17 @@
                         <div class="mb-3">
                             <label for="nomeUtente" class="form-label">Nome</label>
                             <input type="text" class="form-control" id="nomeUtente">
-                          </div>
+                        </div>
                         <!-- COGNOME -->
                         <div class="mb-3">
                             <label for="cognomeUtente" class="form-label">Cognome</label>
                             <input type="text" class="form-control" id="cognomeUtente">
-                          </div>
+                        </div>
                         <!-- EMAIL -->
                         <div class="mb-3">
                             <label for="emailAddress" class="form-label">Email</label>
                             <input type="email" class="form-control" id="emailAddress">
-                          </div>
+                        </div>
                         <!-- TIPO LAVORO -->
                         <div class="mb-3">
                             <label for="tipoLavoro" class="form-label">Seleziona Servizio</label>
@@ -76,18 +76,20 @@
                                 <option value="1">Sviluppo backend</option>
                                 <option value="2">Sviluppo frontend</option>
                                 <option value="3">Analisi Progettuale</option>
-                              </select>
-                          </div>
+                            </select>
+                        </div>
                         <!-- TEXT AREA -->
                         <div class="mb-3">
                             <label for="textArea" class="form-label">Text Area</label>
                             <textarea class="form-control" id="textArea" rows="4"></textarea>
-                          </div>
+                        </div>
                         <!-- CODICE PROMO -->
                         <div class="mb-3">
                             <label for="codicePromo" class="form-label">Codice Promozionale (opzionale)</label>
                             <input type="text" class="form-control" id="codicePromo">
-                          </div>
+                            <div class="invalid-feedback">Il campo non è valido</div>
+                            <div class="valid-feedback">Il campo è valido</div>
+                        </div>
                         <!-- PRIVACY -->
                         <div class="mb-3 form-check">
                           <input type="checkbox" class="form-check-input" id="privacyPolicy">
@@ -101,7 +103,7 @@
                             <!-- Tasto Form -->
                             <div class="col-12 col-md-4" id="terza-colonna">
                                 <button class="calcola" id="quoteButton">Calcola Preventivo</button>
-                             </div>
+                            </div>
                             
                             <!-- Prezzo FInale -->
                             <div class="col-12 col-md-4" id="quarta-colonna">
@@ -128,7 +130,7 @@
                           <a href="#" class="card-link">Help Desk</a>
                           <a href="#" class="card-link"></a>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
