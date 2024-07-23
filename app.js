@@ -11,8 +11,20 @@ let inputPrivacyElement = document.getElementById('privacyPolicy')
 
 let inputPulsanteElement = document.getElementById('quoteButton')
 
-// 2) Creiamo un Array dove immagazzinare i dati del form per poterli riutilizzare
-let formData = []
+// 2) Creiamo le variabili da utilizzare nei nostro calcolatore
+let formData = {
+    nome: '',
+    cognome: '',
+    email: '',
+    servizio: '',
+    messaggio: '',
+    sconto: '',
+    privacy: '',
+}
+let prezzoLordo
+let codicePromo = ['YHDNU32', 'JANJC63', 'PWKCN25', 'SJDPO96', 'POCIE24']
+let sconto
+let prezzoFinale
 
 // 3) Attiviamo il tasto del form e togliamo l'evento di default + recupero valori e assegnazione oggetto
 inputPulsanteElement.addEventListener ('click', function(event) {
@@ -38,17 +50,41 @@ inputPulsanteElement.addEventListener ('click', function(event) {
     // console.log(codiceUtente)
     // console.log(privacyUtente)
 
-    // 3E) Pushiamo i valori all'interno dell'Array esterno
-    formData.push({
-        nome: nomeUtente,
-        cognome: cognomeUtente,
-        email: emailUtente,
-        servizio: servizioUtente,
-        messaggio: textUtente,
-        sconto: codiceUtente,
-        privacy: privacyUtente
-    })
-    // formData.push(nomeUtente, cognomeUtente, emailUtente, servizioUtente, textUtente, codiceUtente, privacyUtente)
+    // 3E) Sostituiamo i valori all'interno dell'oggetto
+    formData['nome'] = nomeUtente
+    formData['cognome'] = cognomeUtente
+    formData['email'] = emailUtente
+    formData['servizio'] = servizioUtente
+    formData['messaggio'] = textUtente
+    formData['sconto'] = codiceUtente
+    formData['privacy'] = privacyUtente
+
+
+    // 4) Calcoliamo il prezzo del preventivo senza sconto
+    if (formData.servizio === "1") {
+        prezzoLordo = 20.50 * 10
+        console.log(prezzoLordo)
+    } else if (formData.servizio === "2") {
+        prezzoLordo = 15.30 * 10
+        console.log(prezzoLordo)
+    } else if (formData.servizio === "3") {
+        prezzoLordo = 33.60 * 10
+        console.log(prezzoLordo)
+    } 
+    
+    // 5) Calcoliamo lo sconto in base all'input
+    if (codicePromo.includes(codiceUtente)) {
+        sconto = prezzoLordo * 0.25
+        console.log(sconto)
+    } else {
+        sconto = 0
+        console.log(sconto)
+    }
+
+    // 6) Calcoliamo il prezzo finale
+    prezzoFinale = prezzoLordo - sconto
+    console.log(prezzoFinale)
 })
 
-console.log(formData)
+
+
