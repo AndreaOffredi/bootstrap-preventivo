@@ -1,7 +1,7 @@
 // 1) Importazione dal DOM del form e relativi campi
-let formElement = document.getElementById('quote-form')
+let formElement = document.getElementById('quote-form') 
 
-let inputNomeElement = document.getElementById('nomeUtente')
+let inputNomeElement = document.getElementById('nomeUtente') //string
 let inputCognomeElement = document.getElementById('cognomeUtente')
 let inputEmailElement = document.getElementById('emailAddress')
 let inputServizioElement = document.getElementById('tipoLavoro')
@@ -75,11 +75,11 @@ inputPulsanteElement.addEventListener ('click', function(event) {
     // 5) Calcoliamo lo sconto in base all'input
     if (codicePromo.includes(codiceUtente)) {
         sconto = prezzoLordo * 0.25
-        inputCodiceElement.classList.add('is-valid')
+        inputCodiceElement.classList.add('is-valid') // validation message
         console.log(sconto)
     } else {
         sconto = 0
-        inputCodiceElement.classList.add('is-invalid')
+        inputCodiceElement.classList.add('is-invalid') // validation message
         console.log(sconto)
     }
 
@@ -88,9 +88,9 @@ inputPulsanteElement.addEventListener ('click', function(event) {
     console.log(prezzoFinale)
 
     // 7) Stampiamo il prezzo nel nostro HTML
-    let outputPrice = document.getElementById('price')
+    let outputPrice = document.getElementById('price') //string
     outputPrice.innerHTML = '€ ' + prezzoFinale.toFixed(2) 
 })
 
 
-
+// DA CHIEDERE COME MAI NON SONO RIUSCITO A METTERE FUORI DALLE GRAFFE I PUNTI 4-5-6-7
