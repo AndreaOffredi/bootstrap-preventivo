@@ -84,6 +84,10 @@ inputPulsanteElement.addEventListener ('click', function(event) {
     // 6) Calcoliamo il prezzo finale
     prezzoFinale = prezzoLordo - sconto
     console.log(prezzoFinale)
+
+    // 7) Stampiamo il prezzo nel nostro HTML
+    let outputPrice = document.getElementById('price')
+    outputPrice.innerHTML = '€ ' + prezzoFinale.toFixed(2) 
 })
 
 
