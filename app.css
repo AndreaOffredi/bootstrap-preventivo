@@ -12,23 +12,23 @@
 
 /* Design Body del sito */
 .body-website {
-    background-color: yellow;
+    background-color: #f1f2f3;
     padding: 50px 0px;
 }
 
     /* colonna sinistra */
     #prima-colonna {
-        background-color: orange;
+        background-color: #f1f2f3;
     }
 
     #seconda-colonna {
-        background-color: green;
+        background-color: #f1f2f3;
     }
 
 
     /* Sezione pulsante e prezzo finale */
     #terza-colonna {
-        background-color: rgb(12, 172, 235);
+        background-color: #f1f2f3;
         display: flex;
         justify-content: center;
         flex-grow: 1;
@@ -58,7 +58,7 @@
     }
 
     #quarta-colonna {
-        background-color: rgb(125, 45, 223);
+        background-color: #f1f2f3;
         display: flex;
         flex-direction: column;
         align-items: center;
